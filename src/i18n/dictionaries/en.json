@@ -1,0 +1,758 @@
+{
+  "meta": {
+    "title": "DAR AL AQAR | Discover Property in Saudi Arabia",
+    "description": "Discover curated properties for sale and rent in Riyadh, Jeddah, Dammam, Khobar and across Saudi Arabia, with advanced search and clear details for every listing.",
+    "ogImageAlt": "DAR AL AQAR — property discovery in Saudi Arabia"
+  },
+  "brand": {
+    "name": "DAR AL AQAR",
+    "latin": "دار العقار",
+    "tagline": "Property discovery across the Kingdom",
+    "homeLink": "DAR AL AQAR — home"
+  },
+  "nav": {
+    "home": "Home",
+    "properties": "Properties",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Contact",
+    "agents": "Agents",
+    "favorites": "Favorites",
+    "dashboard": "Dashboard",
+    "login": "Log in",
+    "register": "Create account",
+    "addProperty": "List Your Property",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "menu": "Menu",
+    "primary": "Primary navigation",
+    "skipToContent": "Skip to content",
+    "favoritesWithCount": "Favorites ({count})"
+  },
+  "language": {
+    "label": "Language",
+    "switchTo": "العربية",
+    "switchToShort": "ع",
+    "switchToLabel": "التبديل إلى العربية",
+    "switching": "Switching language…"
+  },
+  "common": {
+    "viewAll": "View all",
+    "viewDetails": "View details",
+    "learnMore": "Learn more",
+    "back": "Back",
+    "close": "Close",
+    "loading": "Loading…",
+    "optional": "optional",
+    "featured": "Featured",
+    "luxury": "Luxury",
+    "currency": "SAR",
+    "perYear": "per year",
+    "sqm": "m²",
+    "demo": "Demo",
+    "demoData": "Demo data",
+    "photoBy": "Photo by {name} · Unsplash",
+    "representativeImage": "Representative image",
+    "approxLocation": "Location is approximate at district level and is not the actual address.",
+    "breadcrumb": "Breadcrumb",
+    "mapUnavailable": "The map could not be loaded.",
+    "mapLoading": "Loading map…",
+    "properties": {
+      "zero": "No properties",
+      "one": "1 property",
+      "two": "{count} properties",
+      "few": "{count} properties",
+      "many": "{count} properties",
+      "other": "{count} properties"
+    }
+  },
+  "listingTypes": {
+    "sale": "For sale",
+    "rent": "For rent"
+  },
+  "listingTabs": {
+    "all": "All",
+    "sale": "Buy",
+    "rent": "Rent"
+  },
+  "propertyTypes": {
+    "apartment": "Apartment",
+    "villa": "Villa",
+    "land": "Land",
+    "floor": "Floor",
+    "townhouse": "Townhouse",
+    "commercial": "Commercial",
+    "office": "Office"
+  },
+  "propertyTypesPlural": {
+    "apartment": "Apartments",
+    "villa": "Villas",
+    "land": "Land plots",
+    "floor": "Floors",
+    "townhouse": "Townhouses",
+    "commercial": "Commercial",
+    "office": "Offices"
+  },
+  "furnishing": {
+    "furnished": "Furnished",
+    "semi-furnished": "Semi-furnished",
+    "unfurnished": "Unfurnished"
+  },
+  "facades": {
+    "north": "North",
+    "south": "South",
+    "east": "East",
+    "west": "West",
+    "corner": "Corner"
+  },
+  "amenities": {
+    "parking": "Parking",
+    "elevator": "Elevator",
+    "central-ac": "Central A/C",
+    "split-ac": "Split A/C",
+    "balcony": "Balcony",
+    "garden": "Garden",
+    "security": "Security",
+    "smart-home": "Smart home",
+    "pool": "Swimming pool",
+    "majlis": "Majlis",
+    "maid-room": "Maid's room",
+    "driver-room": "Driver's room",
+    "gym": "Gym",
+    "sea-view": "Sea view",
+    "equipped-kitchen": "Fitted kitchen",
+    "storage": "Storage",
+    "private-entrance": "Private entrance",
+    "rooftop": "Private roof"
+  },
+  "imageKinds": {
+    "exterior": "Exterior",
+    "aerial": "Aerial view",
+    "living": "Living room",
+    "majlis": "Majlis",
+    "kitchen": "Kitchen",
+    "dining": "Dining room",
+    "bedroom": "Bedroom",
+    "bathroom": "Bathroom",
+    "pool": "Pool",
+    "terrace": "Outdoor terrace",
+    "view": "View",
+    "interior": "Interior",
+    "land": "Plot"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Curated property across the Kingdom",
+      "title": "Your Next Place Starts Here",
+      "subtitle": "Explore exceptional properties across Saudi Arabia and discover a place that matches your ambitions.",
+      "primaryCta": "Explore Properties",
+      "secondaryCta": "List Your Property",
+      "imageAlt": "Contemporary villa with illuminated glass façades at dusk",
+      "statListings": "Available listings",
+      "statCities": "Saudi cities",
+      "statTypes": "Property types"
+    },
+    "featured": {
+      "eyebrow": "Curated",
+      "title": "Featured Properties",
+      "subtitle": "The latest featured listings from Riyadh, Jeddah and the Eastern Province."
+    },
+    "cities": {
+      "eyebrow": "Destinations",
+      "title": "Explore by City",
+      "subtitle": "From the capital to the coast, see what each city has to offer.",
+      "explore": "Explore properties in {city}"
+    },
+    "types": {
+      "eyebrow": "Categories",
+      "title": "Browse by Property Type",
+      "subtitle": "Start from the kind of property that fits your lifestyle or investment.",
+      "items": {
+        "villa": { "title": "Villas", "body": "Privacy and generous family space" },
+        "apartment": { "title": "Apartments", "body": "Practical living close to everything" },
+        "land": { "title": "Land", "body": "Build your project from the ground up" },
+        "commercial": { "title": "Commercial", "body": "Showrooms and space for business" },
+        "luxury": { "title": "Luxury", "body": "Exceptional homes with refined detail" }
+      }
+    },
+    "premium": {
+      "eyebrow": "The Luxury Collection",
+      "title": "Where Architecture Meets Calm",
+      "subtitle": "A selection of the finest residences in Riyadh, Jeddah and Khobar, for those who value detail.",
+      "cta": "Explore the luxury collection"
+    },
+    "why": {
+      "eyebrow": "Why DAR AL AQAR?",
+      "title": "A Search Experience Designed Around Your Time",
+      "subtitle": "Every detail is built to help you reach the right property with clarity and confidence.",
+      "items": {
+        "discovery": {
+          "title": "Easy discovery",
+          "body": "Browse by city, district and property type in a calm, fast interface."
+        },
+        "details": {
+          "title": "Detailed information",
+          "body": "Area, façade, street width and amenities — all in one place."
+        },
+        "contact": {
+          "title": "Direct communication",
+          "body": "Request a viewing or reach the listing representative from the property page."
+        },
+        "filters": {
+          "title": "Advanced filters",
+          "body": "Set price, area and rooms, then share your search with a single link."
+        },
+        "experience": {
+          "title": "Effortless experience",
+          "body": "Arabic-first design that works smoothly on mobile and desktop."
+        }
+      }
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Three Steps to Your Property",
+      "steps": {
+        "search": {
+          "title": "Search for your property",
+          "body": "Choose a city, property type and budget, and see results instantly."
+        },
+        "compare": {
+          "title": "Compare options",
+          "body": "Save favourites and compare areas, prices and amenities side by side."
+        },
+        "contact": {
+          "title": "Contact the representative",
+          "body": "Request a viewing and follow up with the agent until you decide."
+        }
+      }
+    },
+    "ownerCta": {
+      "eyebrow": "For property owners",
+      "title": "Have a Property? Reach the Right Audience.",
+      "subtitle": "Present your property to serious seekers and manage listings and inquiries from one dashboard.",
+      "button": "List Your Property",
+      "secondary": "See the owner dashboard"
+    }
+  },
+  "search": {
+    "title": "Find your property",
+    "listingType": "Listing type",
+    "city": "City",
+    "district": "District",
+    "type": "Property type",
+    "price": "Price range",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "area": "Area (m²)",
+    "anyCity": "All cities",
+    "anyDistrict": "All districts",
+    "anyType": "All types",
+    "anyPrice": "Any price",
+    "anyRooms": "Any",
+    "roomsMin": "{count}+",
+    "submit": "Search",
+    "selectCityFirst": "Select a city first",
+    "keyword": "Keyword",
+    "keywordPlaceholder": "District, city or listing ID",
+    "minPrice": "Min price",
+    "maxPrice": "Max price",
+    "minArea": "Min area",
+    "maxArea": "Max area",
+    "priceUpTo": "Up to {value}",
+    "priceFrom": "{value}+",
+    "priceBetween": "{min} – {max}",
+    "rentNote": "Rent prices are annual",
+    "popular": "Popular searches",
+    "popularItems": {
+      "riyadhVillas": "Villas for sale in Riyadh",
+      "jeddahApartments": "Apartments in Jeddah",
+      "khobarRent": "Rentals in Khobar",
+      "luxury": "Luxury homes"
+    }
+  },
+  "properties": {
+    "metaTitle": "Properties for Sale and Rent in Saudi Arabia",
+    "metaDescription": "Search and compare apartments, villas, land and commercial property for sale and rent across Saudi Arabia.",
+    "title": "Properties",
+    "titleIn": "Properties in {place}",
+    "subtitle": "Search and compare properties for sale and rent across the Kingdom.",
+    "results": {
+      "zero": "No results",
+      "one": "1 property",
+      "two": "{count} properties",
+      "few": "{count} properties",
+      "many": "{count} properties",
+      "other": "{count} properties"
+    },
+    "sortLabel": "Sort by",
+    "sort": {
+      "newest": "Newest",
+      "price-asc": "Price: low to high",
+      "price-desc": "Price: high to low",
+      "area-desc": "Largest area"
+    },
+    "viewLabel": "View",
+    "view": {
+      "grid": "Grid",
+      "list": "List",
+      "map": "Map"
+    },
+    "filters": {
+      "title": "Filter results",
+      "open": "Filters",
+      "clearAll": "Clear all",
+      "showResults": "Show results",
+      "active": "Active filters",
+      "remove": "Remove: {label}",
+      "luxuryOnly": "Luxury properties only",
+      "agent": "Agent: {name}",
+      "keyword": "Search: {value}",
+      "minPrice": "From {value}",
+      "maxPrice": "Up to {value}",
+      "minArea": "From {value} m²",
+      "maxArea": "Up to {value} m²",
+      "beds": "{count}+ beds",
+      "baths": "{count}+ baths"
+    },
+    "empty": {
+      "title": "No matching properties",
+      "body": "Try widening your search or removing some filters.",
+      "action": "Clear filters"
+    },
+    "pagination": {
+      "label": "Pagination",
+      "page": "Page {page}",
+      "previous": "Previous",
+      "next": "Next",
+      "summary": "Page {page} of {total}"
+    },
+    "mapTitle": "Property map",
+    "updating": "Updating results…"
+  },
+  "property": {
+    "id": "Listing ID",
+    "price": "Price",
+    "bedrooms": "Bedrooms",
+    "bathrooms": "Bathrooms",
+    "area": "Area",
+    "type": "Property type",
+    "listing": "Listing type",
+    "furnishing": "Furnishing",
+    "facade": "Façade",
+    "streetWidth": "Street width",
+    "meters": "{value} m",
+    "age": "Property age",
+    "ageNew": "New",
+    "ageYears": {
+      "one": "1 year",
+      "two": "{count} years",
+      "few": "{count} years",
+      "many": "{count} years",
+      "other": "{count} years"
+    },
+    "posted": "Listed on",
+    "overview": "Property details",
+    "description": "Description",
+    "highlights": "Highlights",
+    "amenities": "Amenities",
+    "location": "Location",
+    "similar": "Similar Properties",
+    "similarSubtitle": "Nearby in price or location — you may also like these.",
+    "cardLink": "View details: {title}",
+    "notFoundTitle": "Property unavailable",
+    "notFoundBody": "This listing may have been removed, or the link is incorrect.",
+    "gallery": {
+      "viewAll": "View all photos ({count})",
+      "open": "View photo {index} full screen",
+      "dialogTitle": "Photo gallery",
+      "prev": "Previous photo",
+      "next": "Next photo",
+      "counter": "{index} of {total}",
+      "thumbnail": "Photo {index}",
+      "representativeNote": "Photos are representative and do not show the actual listed property."
+    },
+    "contact": {
+      "title": "Ask about this property",
+      "agentLabel": "Listing representative",
+      "call": "Call",
+      "whatsapp": "WhatsApp",
+      "demoTitle": "Demo contact details",
+      "demoBody": "This is a demo listing, so no real phone numbers are available. You can try the viewing request form.",
+      "agentListings": "View agent's listings"
+    },
+    "schedule": {
+      "title": "Schedule a viewing",
+      "subtitle": "Pick a convenient time and the agent will contact you to confirm.",
+      "name": "Full name",
+      "phone": "Mobile number",
+      "phonePlaceholder": "05XXXXXXXX",
+      "date": "Preferred date",
+      "time": "Preferred time",
+      "times": {
+        "morning": "Morning (9 – 12)",
+        "afternoon": "Afternoon (12 – 4)",
+        "evening": "Evening (4 – 9)"
+      },
+      "message": "Notes",
+      "messagePlaceholder": "Anything you'd like to add…",
+      "submit": "Send request",
+      "submitting": "Sending…",
+      "successTitle": "Request received (demo)",
+      "successBody": "This is a demo — the request was not sent to a real agent.",
+      "again": "Send another request"
+    },
+    "share": {
+      "label": "Share",
+      "copied": "Link copied",
+      "failed": "Couldn't copy the link"
+    },
+    "favorite": {
+      "add": "Add to favorites",
+      "remove": "Remove from favorites"
+    }
+  },
+  "favorites": {
+    "metaTitle": "Favorites",
+    "eyebrow": "Saved",
+    "title": "Your Favorite Properties",
+    "subtitle": "Properties you save appear here, ready whenever you are.",
+    "emptyTitle": "No saved properties yet",
+    "emptyBody": "Tap the heart icon on any property to save it for later.",
+    "emptyAction": "Browse properties",
+    "clearAll": "Clear all",
+    "storageNote": "Favorites are stored on this device only and will sync to your account once sign-in is enabled."
+  },
+  "projects": {
+    "metaTitle": "Real Estate Projects",
+    "metaDescription": "Explore residential and commercial developments in Riyadh, Jeddah, Khobar and Madinah.",
+    "eyebrow": "Developments",
+    "title": "Residential & Commercial Projects",
+    "subtitle": "Communities, towers and business buildings at every stage of development.",
+    "status": {
+      "ready": "Ready",
+      "under-construction": "Under construction",
+      "off-plan": "Off-plan"
+    },
+    "developer": "Developer",
+    "startingFrom": "Starting from",
+    "units": "Units",
+    "completion": "Completion",
+    "types": "Unit types",
+    "viewProject": "Project details",
+    "features": "Project features",
+    "about": "About the project",
+    "location": "Project location",
+    "facts": "Project facts",
+    "demoNote": "Projects and developers shown are fictional names used for demonstration only.",
+    "allProjects": "All projects",
+    "interestTitle": "Interested in this project?",
+    "interestBody": "Get in touch to learn more about available units and payment plans.",
+    "interestCta": "Contact us",
+    "notFoundTitle": "Project unavailable"
+  },
+  "agents": {
+    "metaTitle": "Real Estate Agents",
+    "metaDescription": "Meet property advisors across Saudi cities and their specialisations.",
+    "eyebrow": "Advisory team",
+    "title": "Advisors Who Know Their Cities",
+    "subtitle": "Meet property advisors by city and specialisation, and browse the listings they represent.",
+    "specialties": "Specialties",
+    "cities": "Cities",
+    "languages": "Languages",
+    "languageNames": {
+      "ar": "Arabic",
+      "en": "English"
+    },
+    "viewListings": "View listings",
+    "contactHidden": "Contact details are hidden in the demo",
+    "demoNote": "Agent profiles are fictional demo personas and imply no accreditation or professional licence."
+  },
+  "about": {
+    "metaTitle": "About Us",
+    "metaDescription": "The story, vision, mission and values behind DAR AL AQAR.",
+    "eyebrow": "Our story",
+    "title": "Redesigning How the Kingdom Searches for Property",
+    "intro": "DAR AL AQAR is a Saudi property discovery platform, designed to make finding your next home or investment clear, calm and enjoyable.",
+    "storyTitle": "Why we started",
+    "story": "Choosing a property is one of the biggest decisions a family makes, yet the search is often exhausting: duplicated ads, missing information and crowded pages. We set out to build an experience that respects people's time, presents what matters clearly, and pairs a sense of place with modern design.",
+    "visionTitle": "Our vision",
+    "vision": "To be the clearest, most effortless way to discover property in Saudi Arabia.",
+    "missionTitle": "Our mission",
+    "mission": "To connect seekers and owners through accurate information and a digital experience designed for the Saudi market.",
+    "valuesTitle": "Our values",
+    "values": {
+      "clarity": {
+        "title": "Clarity",
+        "body": "Straightforward information, visible prices and an uncluttered interface."
+      },
+      "respect": {
+        "title": "Respect for time",
+        "body": "Every step on the platform is designed to shorten the path to you."
+      },
+      "craft": {
+        "title": "Craft",
+        "body": "We care for design and content the way an architect cares for a building."
+      },
+      "local": {
+        "title": "Sense of place",
+        "body": "Saudi terminology, cities and districts, and an Arabic-first experience."
+      }
+    },
+    "benefitsTitle": "What the platform offers",
+    "benefits": {
+      "search": "Advanced search by city, district, price and area",
+      "compare": "Save favourite properties and compare them",
+      "bilingual": "A complete experience in Arabic and English",
+      "owners": "Tools for owners to manage listings and inquiries"
+    },
+    "imageAlt": "Heritage mud-brick building in Najdi style reflected in water",
+    "craftImageAlt": "Ornate wooden details on a heritage façade",
+    "ctaTitle": "Start your property journey today",
+    "ctaBody": "Explore properties across Saudi cities and save the ones that suit you.",
+    "ctaButton": "Explore Properties"
+  },
+  "contact": {
+    "metaTitle": "Contact Us",
+    "metaDescription": "Reach the DAR AL AQAR team for general inquiries, listings and partnerships.",
+    "eyebrow": "We'd love to hear from you",
+    "title": "How Can We Help?",
+    "subtitle": "Send us a message and we'll get back to you as soon as possible.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "subjects": {
+        "general": "General inquiry",
+        "listing": "List a property",
+        "partnership": "Partnerships",
+        "support": "Technical support"
+      },
+      "message": "Your message",
+      "messagePlaceholder": "Tell us about your inquiry…",
+      "submit": "Send message",
+      "submitting": "Sending…",
+      "successTitle": "Thanks for reaching out",
+      "successBody": "This is a demo form — your message has not been sent to any server yet.",
+      "again": "Send another message"
+    },
+    "channels": {
+      "title": "Contact channels",
+      "email": "Email",
+      "emailNote": "Placeholder address — to be replaced at launch",
+      "hours": "Working hours",
+      "hoursValue": "Sunday – Thursday, 9 am – 5 pm (Riyadh time)",
+      "office": "Office",
+      "officeValue": "To be announced"
+    }
+  },
+  "auth": {
+    "login": {
+      "metaTitle": "Log in",
+      "title": "Welcome back",
+      "subtitle": "Log in to manage your listings and favourites.",
+      "submit": "Log in",
+      "submitting": "Verifying…",
+      "noAccount": "Don't have an account?",
+      "forgot": "Forgot password?"
+    },
+    "register": {
+      "metaTitle": "Create account",
+      "title": "Create your account",
+      "subtitle": "Save properties and list your own in minutes.",
+      "submit": "Create account",
+      "submitting": "Creating…",
+      "haveAccount": "Already have an account?",
+      "termsPrefix": "I agree to the",
+      "termsLink": "Terms & Conditions",
+      "and": "and",
+      "privacyLink": "Privacy Policy"
+    },
+    "fields": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "password": "Password",
+      "confirmPassword": "Confirm password",
+      "accountType": "Account type",
+      "accountTypes": {
+        "seeker": "Property seeker",
+        "owner": "Property owner",
+        "agent": "Real estate agent"
+      }
+    },
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "passwordHint": "At least 8 characters, including a letter and a number.",
+    "notConnectedTitle": "Accounts aren't enabled yet",
+    "notConnectedBody": "This is a demo interface: we only validated your input. No account was created and nothing was sent to a server.",
+    "forgotNote": "Password recovery will be available once an authentication service is connected.",
+    "asideTitle": "Your next property is one search away",
+    "asideBody": "Save properties, follow your inquiries and manage your listings in one place."
+  },
+  "dashboard": {
+    "metaTitle": "Owner Dashboard",
+    "title": "Owner Dashboard",
+    "greeting": "Welcome, {name}",
+    "demoName": "Demo user",
+    "demoBanner": "Demo dashboard: data and figures are for illustration only. There is no real sign-in or access control.",
+    "sectionsLabel": "Dashboard sections",
+    "tabs": {
+      "overview": "Overview",
+      "properties": "My Properties",
+      "add": "Add Property",
+      "inquiries": "Inquiries",
+      "settings": "Account Settings"
+    },
+    "overview": {
+      "activeListings": "Active listings",
+      "totalViews": "Views this month",
+      "newInquiries": "New inquiries",
+      "saves": "Saves",
+      "demoFigures": "Demo figures",
+      "recentInquiries": "Recent inquiries",
+      "topListings": "Most viewed listings",
+      "views": "{count} views",
+      "viewAllInquiries": "All inquiries"
+    },
+    "properties": {
+      "property": "Property",
+      "status": "Status",
+      "price": "Price",
+      "views": "Views",
+      "actions": "Actions",
+      "statuses": {
+        "active": "Active",
+        "paused": "Paused"
+      },
+      "view": "View listing",
+      "addNew": "Add property"
+    },
+    "add": {
+      "title": "Add a new property",
+      "subtitle": "Enter the core listing details. Photos can be added once a storage service is connected.",
+      "titleAr": "Listing title (Arabic)",
+      "titleEn": "Listing title (English)",
+      "listingType": "Listing type",
+      "propertyType": "Property type",
+      "city": "City",
+      "district": "District",
+      "price": "Price (SAR)",
+      "priceHint": "For rentals, enter the annual amount.",
+      "area": "Area (m²)",
+      "bedrooms": "Bedrooms",
+      "bathrooms": "Bathrooms",
+      "description": "Description",
+      "submit": "Save listing",
+      "submitting": "Saving…",
+      "successTitle": "Details look good",
+      "successBody": "This is a demo form — the listing was not published or saved to any server.",
+      "reset": "Add another property",
+      "choose": "Select"
+    },
+    "inquiries": {
+      "from": "From",
+      "property": "Property",
+      "date": "Date",
+      "status": "Status",
+      "statuses": {
+        "new": "New",
+        "replied": "Replied"
+      }
+    },
+    "settings": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Mobile number",
+      "notifications": "Email me when a new inquiry arrives",
+      "submit": "Save changes",
+      "saving": "Saving…",
+      "saved": "Details validated. Nothing was saved to a server (demo)."
+    }
+  },
+  "footer": {
+    "summary": "A Saudi platform for discovering property for sale and rent, with a clear, fast experience in Arabic and English.",
+    "explore": "Explore",
+    "categories": "Categories",
+    "company": "Company",
+    "contact": "Contact",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy",
+    "rights": "© {year} DAR AL AQAR. All rights reserved.",
+    "demoNotice": "Prototype for demonstration — all listings and data are fictional.",
+    "photoCredit": "Architectural photography from Unsplash",
+    "emailNote": "Placeholder address",
+    "social": "Social media",
+    "socialNames": {
+      "x": "X",
+      "instagram": "Instagram",
+      "linkedin": "LinkedIn",
+      "youtube": "YouTube"
+    }
+  },
+  "legal": {
+    "draftNotice": "Illustrative draft for demonstration only — not an approved legal document.",
+    "updated": "Last updated: {date}",
+    "terms": {
+      "metaTitle": "Terms & Conditions",
+      "title": "Terms & Conditions",
+      "sections": {
+        "use": {
+          "title": "Using the platform",
+          "body": "DAR AL AQAR lets you browse property listings and get in touch about them. Users agree to use the platform lawfully and not to misuse it."
+        },
+        "listings": {
+          "title": "Listing content",
+          "body": "Advertisers are responsible for the accuracy of their listings. In this demo, every listing is fictional and does not represent a real property."
+        },
+        "liability": {
+          "title": "Limitation of liability",
+          "body": "Information shown is not property or financial advice. Verify any property with the relevant authorities before making a decision."
+        }
+      }
+    },
+    "privacy": {
+      "metaTitle": "Privacy Policy",
+      "title": "Privacy Policy",
+      "sections": {
+        "data": {
+          "title": "Data we collect",
+          "body": "In this demo, form data is never sent to a server. Your language preference is stored in a cookie and your favourites stay in your browser."
+        },
+        "cookies": {
+          "title": "Cookies",
+          "body": "We use a single essential cookie to remember your language. We do not use tracking or advertising cookies."
+        },
+        "rights": {
+          "title": "Your rights",
+          "body": "You can clear favourites from the Favorites page and delete cookies from your browser settings at any time."
+        }
+      }
+    }
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Enter a valid email address",
+    "phone": "Enter a valid Saudi mobile number starting with 05",
+    "minLength": "Must be at least {min} characters",
+    "maxLength": "Must be at most {max} characters",
+    "password": "At least 8 characters, including a letter and a number",
+    "passwordMatch": "Passwords don't match",
+    "futureDate": "Choose today or a later date",
+    "positive": "Enter a number greater than zero",
+    "integer": "Enter a whole number",
+    "terms": "You must accept the terms to continue",
+    "arabicText": "Write the title in Arabic"
+  },
+  "notFound": {
+    "metaTitle": "Page not found",
+    "title": "Page not found",
+    "body": "The page may have moved, or the link may be incorrect.",
+    "home": "Back to home",
+    "browse": "Browse properties"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "body": "Sorry about that. Please try again.",
+    "retry": "Try again"
+  }
+}

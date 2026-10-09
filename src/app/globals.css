@@ -1,26 +1,276 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* ───────────────────────── Design tokens ───────────────────────── */
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+  /* Brand */
+  --color-ink: #102d35; /* Deep teal — headings, dark surfaces, footer */
+  --color-ink-soft: #16404a;
+  --color-primary: #1b555c; /* Secondary teal — interactive */
+  --color-primary-hover: #164a50;
+  --color-mint: #bae7d4; /* Contemporary accent */
+  --color-mint-soft: #e4f4ec;
+  --color-sand: #d2a77e; /* Premium detail, use sparingly */
+  --color-sand-soft: #f4ebe1;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  /* Neutrals */
+  --color-canvas: #f6f7f3; /* Warm ivory page background */
+  --color-surface: #ffffff;
+  --color-fg: #172b30;
+  /* #66787a from the brand sheet, darkened slightly to pass WCAG AA on ivory */
+  --color-fg-muted: #5c6e70;
+  --color-line: #e4eae7;
+  --color-line-strong: #cfd9d5;
+
+  /* Feedback */
+  --color-success: #24856c;
+  --color-danger: #dc5555;
+  --color-danger-fg: #b83c3c; /* AA-compliant text tone of danger */
+
+  /* Typography — font variables are injected by next/font on <html> */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+
+  --text-display: clamp(2.5rem, 1.6rem + 3.6vw, 4.75rem);
+  --text-display--line-height: 1.08;
+  --text-title: clamp(1.75rem, 1.35rem + 1.6vw, 2.75rem);
+  --text-title--line-height: 1.18;
+
+  /* Radii */
+  --radius-card: 1.25rem;
+  --radius-panel: 1.75rem;
+
+  /* Elevation — soft, teal-tinted, never heavy */
+  --shadow-soft: 0 1px 2px rgb(16 45 53 / 0.04), 0 8px 24px -12px rgb(16 45 53 / 0.14);
+  --shadow-lift: 0 2px 6px rgb(16 45 53 / 0.05), 0 24px 48px -24px rgb(16 45 53 / 0.3);
+  --shadow-float: 0 30px 80px -30px rgb(16 45 53 / 0.45);
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+
+  /* Layout */
+  --container-site: 82rem;
+  --breakpoint-3xl: 120rem;
+
+  --animate-shimmer: shimmer 1.6s linear infinite;
+  --animate-rise: rise 0.9s var(--ease-out-expo) both;
+  --animate-hero-zoom: hero-zoom 1.8s var(--ease-out-expo) both;
+
+  @keyframes rise {
+    from {
+      opacity: 0;
+      transform: translateY(18px);
+    }
+  }
+
+  @keyframes hero-zoom {
+    from {
+      transform: scale(1.08);
+    }
+  }
+
+  @keyframes shimmer {
+    from {
+      background-position: 200% 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* ───────────────────────── Locale typography ───────────────────────── */
+
+:root {
+  --font-body: var(--font-plex-arabic), "Segoe UI", Tahoma, sans-serif;
+  --font-heading: var(--font-alexandria), var(--font-plex-arabic), sans-serif;
+  --header-height: 4.5rem;
+}
+
+:root:lang(en) {
+  --font-body: var(--font-manrope), "Segoe UI", system-ui, sans-serif;
+  --font-heading: var(--font-manrope), "Segoe UI", system-ui, sans-serif;
+}
+
+/* ───────────────────────── Base ───────────────────────── */
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: calc(var(--header-height) + 1rem);
+  }
+
+  body {
+    @apply bg-canvas font-sans text-fg antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "kern";
+  }
+
+  :lang(ar) body {
+    line-height: 1.75;
+  }
+
+  :lang(en) body {
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display text-ink;
+    text-wrap: balance;
+  }
+
+  :lang(en) :is(h1, h2, h3) {
+    letter-spacing: -0.02em;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    @apply bg-mint text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-primary;
+  }
+
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+@utility container-site {
+  @apply mx-auto w-full max-w-(--container-site) px-4 sm:px-6 lg:px-8;
+}
+
+/* Mirrors directional icons (arrows, chevrons) in RTL. */
+@utility flip-rtl {
+  &:where([dir="rtl"], [dir="rtl"] *) {
+    transform: scaleX(-1);
+  }
+}
+
+@utility skeleton {
+  background: linear-gradient(
+    90deg,
+    var(--color-line) 0%,
+    color-mix(in oklab, var(--color-line) 40%, white) 50%,
+    var(--color-line) 100%
+  );
+  background-size: 200% 100%;
+  animation: var(--animate-shimmer);
+}
+
+@utility scrollbar-none {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* ───────────────────────── Overlay motion ───────────────────────── */
+
+:root {
+  --sheet-from: 100%;
+}
+[dir="rtl"] {
+  --sheet-from: -100%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes sheet-in {
+  from {
+    transform: translateX(var(--sheet-from));
+  }
+}
+@keyframes sheet-out {
+  to {
+    transform: translateX(var(--sheet-from));
+  }
+}
+@keyframes sheet-up {
+  from {
+    transform: translateY(100%);
+  }
+}
+@keyframes sheet-down {
+  to {
+    transform: translateY(100%);
+  }
+}
+@keyframes zoom-in {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+}
+
+/* ───────────────────────── Leaflet overrides ───────────────────────── */
+
+.leaflet-container {
+  font-family: var(--font-body);
+  background: var(--color-mint-soft);
+}
+
+.map-pin {
+  background: transparent;
+  border: 0;
+}
+
+.map-pin span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  transform: translate(-50%, -100%);
+  border-radius: 999px;
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  background: var(--color-ink);
+  box-shadow: 0 6px 16px -6px rgb(16 45 53 / 0.6);
+  transition:
+    background-color 150ms,
+    transform 150ms;
+}
+
+.map-pin span:hover,
+.map-pin.is-active span {
+  background: var(--color-primary);
+  transform: translate(-50%, -100%) scale(1.08);
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 1rem;
+  box-shadow: var(--shadow-lift);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
